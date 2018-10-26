@@ -1,0 +1,87 @@
+header, main, footer {
+  display: block;
+}
+
+body {
+	background-image: url("../img/tlo50.jpg"), url("../img/znak.jpg");
+	background-repeat: no-repeat, repeat;
+	background-color: black;
+	background-size: 100%, 120px;
+}
+
+.logotlo {
+	background-image: url("../img/paseklogo.png");
+	background-repeat: repeat;
+	height: 150px;
+	max-height: 150px;
+	margin: -8px;
+}
+
+#logo {
+	text-align: center;
+	max-height: 120px;
+}
+
+#napis {
+	font-family: 'Black Ops One';
+	font-family: arial, verdana, 'Times New Roman', sans-sherif;
+	font: 48px 'Black Ops One';
+	text-shadow: 1px 1px 10px white;
+	text-align: center;
+	margin: auto;
+	padding-top: 2%;
+}
+
+.frakcje {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5%;
+	width: 50%;
+	min-width: 720px;
+}
+
+.wrapper {
+  float: left;
+  width: 20%;
+}
+
+.wrapper img{
+  width: 100%;
+}
+
+.wrapper .top {
+  display: block;
+}
+
+.wrapper:hover .top {
+  display: none;
+}
+
+.wrapper .bottom {
+  display: none;
+}
+
+.wrapper:hover .bottom {
+  display: block;
+}
+
+.opisy {
+	margin: auto;
+	width: 50%;
+	min-width: 500px;
+	font-family: 'Black Ops One';
+	font-family: arial, verdana, 'Times New Roman', sans-sherif;
+	font: 24px 'Black Ops One';
+	text-shadow: 1px 1px 10px white;
+}
+
+#nic {
+	visibility: hidden;
+}
+
+
+#nazwa {
+	text-align: center;
+	font: 28px 'Black Ops One';
+}
