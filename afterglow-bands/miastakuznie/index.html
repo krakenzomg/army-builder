@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="../assets/css/main.css">
+		<link rel="stylesheet" href="../assets/css/miastakuznie.css">
+		<link rel="stylesheet" href="../assets/css/helpers.css">
 		<link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
-		<!-- [if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-		<![endif-->]
 	</head>
+
 	<body>
 		<header>
 				<div class="pasek">
 					<div class="logo">
-						<a href="../index.html"><img src="img/logomale.jpg" id="logo"></a>
+						<a href="../index.html"><img src="../assets/img/logomale.jpg" id="logo"></a>
 					</div>
 					<div class="nazwafrakcji">
 						<p>Miasta Kuźnie<p>
@@ -26,18 +27,23 @@
 				<div class="dodawanie">
 					<div class="dodajmiejsce">
 					</div>
-					<div class="dodajbohatera" id="dodajbohatera">
+
+					<div class="dodajbohatera" onclick="addHero()">
+					<!-- <div class="dodajbohatera" onclick="toogleSection('bohater')"> -->
 						<br>
 						<p class="napisdodaj" id="napisbohater">Dodaj bohatera </p>
 					</div>
-					<div class="dodajspecjalna" id="dodajspecjalna">
+					<div class="dodajspecjalna" onclick="addSpecial()">
+					<!-- <div class="dodajspecjalna" onclick="toogleSection('specjalna')"> -->
 						<br>
 						<p class="napisdodaj">Dodaj jednostkę specjalną</p>
 					</div>
-					<div class="dodajpodstawowa" id="dodajpodstawowa">
+					<div class="dodajpodstawowa" onclick="addBasic()">
+					<!-- <div class="dodajpodstawowa" onclick="toogleSection('podstawowa')"> -->
 						<br>
 						<p class="napisdodaj" id="napispodstawowa">Dodaj jednostkę podstawową</p>
 					</div>
+
 				</div>
 				<div class="wybieranie">
 					<div class="bohater" id="bohater">
@@ -723,6 +729,8 @@
 			<footer>
 			</footer>
 		</div>
-		<script type="text/javascript" charset="UTF-8" src="js/script.js"></script>
+
+		<script type="text/javascript" charset="UTF-8" src="../assets/js/constants.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="../assets/js/miastakuznie.js"></script>
 	</body>
 </html>

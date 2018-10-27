@@ -1,45 +1,46 @@
-<!-- BRRRRRRRRRRRRRRRRRRRRRRRRRAAAAAAAAAAAAAAAAAAAPPPPPPP -->
-
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="../assets/css/helpers.css">
 		<link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
-		<!-- [if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-		<![endif-->
 	</head>
+
 	<body>
 		<header>
 			<div class="logotlo">
 				<div id="logo">
-					<img src="img/logomale.jpg">
+					<img src="assets/img/logomale.jpg">
 				</div>
 			</div>
 			<p id="napis">Wybierz frakcję</p>
 		</header>
 		<main>
 			<div class="frakcje">
-				<div class="wrapper" id="elfy">
-					<img src="img/frakcje/elfy1.png" class="top"></img>
-					<a href="naiymvael/index.html"><img src="img/frakcje/elfy2.png" class="bottom"></img></a>
+
+				<div class="wrapper" onmouseover="displayInfo('elves')" onmouseout="resetInfo()"> <!-- no need for ids -->
+					<img src="assets/img/frakcje/elfy1.png" class="top"></img>
+					<a href="naiymvael/index.html"><img src="assets/img/frakcje/elfy2.png" class="bottom"></img></a>
 				</div>
-				<div class="wrapper" id="ludzie">
-					<img src="img/frakcje/ludzie1.png" class="top"></img>
-					<a href="ludziepustkowi/index.html"><img src="img/frakcje/ludzie2.png" class="bottom"></img></a>
+
+				<div class="wrapper" onmouseover="displayInfo('humans')" onmouseout="resetInfo()">
+					<img src="assets/img/frakcje/ludzie1.png" class="top"></img>
+					<a href="ludziepustkowi/index.html"><img src="assets/img/frakcje/ludzie2.png" class="bottom"></img></a>
 				</div>
+
 				<div class="wrapper" id="krasnoludy">
-					<img src="img/frakcje/krasnoludy1.png" class="top"></img>
-					<a href="miastakuznie/index.html"><img src="img/frakcje/krasnoludy2.png" class="bottom"></img></a>
+					<img src="assets/img/frakcje/krasnoludy1.png" class="top"></img>
+					<a href="miastakuznie/index.html"><img src="assets/img/frakcje/krasnoludy2.png" class="bottom"></img></a>
 				</div>
 				<div class="wrapper" id="konstrukty">
-					<img src="img/frakcje/konstrukty1.png" class="top"></img>
-					<a href="konstrukty/index.html"><img src="img/frakcje/konstrukty2.png" class="bottom"></img></a>
+					<img src="assets/img/frakcje/konstrukty1.png" class="top"></img>
+					<a href="konstrukty/index.html"><img src="assets/img/frakcje/konstrukty2.png" class="bottom"></img></a>
 				</div>
 				<div class="wrapper" id="delaria">
-					<img src="img/frakcje/delaria1.png" class="top"></img>
-					<a href="delaria/index.html"><img src="img/frakcje/delaria2.png" class="bottom"></img></a>
+					<img src="assets/img/frakcje/delaria1.png" class="top"></img>
+					<a href="delaria/index.html"><img src="assets/img/frakcje/delaria2.png" class="bottom"></img></a>
 				</div>
 			</div>
 			<div class="opisy">
@@ -50,6 +51,8 @@
 		</main>
 		<footer>
 		</footer>
-		<script type="text/javascript" charset="UTF-8" src="js/script.js"></script>
+
+		<script type="text/javascript" charset="UTF-8" src="assets/js/constants.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="assets/js/main.js"></script>
 	</body>
 </html>

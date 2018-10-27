@@ -148,13 +148,14 @@ body {
 
 .bohater, .specjalna, .podstawowa {
 	width: 100%;
+	display: none;
 }
 
 .bohater1, .bohater2, .bohater3, .specjalna1, .specjalna2, .specjalna3, .podstawowa1, .podstawowa2, .podstawowa3 {
 	font-family: 'Black Ops One';
 	font-family: arial, verdana, 'Times New Roman', sans-sherif;
 	font: 12px 'verdana';
-	height: 120px;	
+	height: 120px;
 	text-shadow: 0px 0px 10px white;
 }
 
@@ -254,6 +255,6 @@ table, td, tr {
 	visibility: hidden;
 }
 
-#bohater, #specjalna, #podstawowa {
+/* #bohater, #specjalna, #podstawowa {
 	display: none;
-}
+} */
