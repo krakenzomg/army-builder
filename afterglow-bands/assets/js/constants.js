@@ -1,4 +1,4 @@
-INFO:
+// INFO:
 // Arraye w słuza do przechowywania prymitywów [1,2,3,'test', null], albo obiektów [{name: 'Kovalsky', age: 55}, {name: 'John', age: 25}]. Arraye przechowujące obiekty nazywamy kolekcją - collection.
 // Arraye w arrayach są praktycznie nieuzywane, do poki nie parsujesz jakiegos pliku mozesz zapomniec o istnieniu zagnieżdzonych arrayow
 
