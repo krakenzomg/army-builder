@@ -5,11 +5,11 @@
 // --
 // Moje rozwiazanie: Handlery w html, jedna funkcja na reset. Przerobiłem tak p1 i p2.
 
-var p3 = document.getElementById('krasnoludy');
-var p4 = document.getElementById('konstrukty');
-var p5 = document.getElementById('delaria');
-var nazwa = document.getElementById('nazwa');
-var opis = document.getElementById('opis');
+// var p3 = document.getElementById('krasnoludy');
+// var p4 = document.getElementById('konstrukty');
+// var p5 = document.getElementById('delaria');
+// var nazwa = document.getElementById('nazwa');
+// var opis = document.getElementById('opis');
 
 // New
 var displayInfo = function(section) {
@@ -19,6 +19,15 @@ var displayInfo = function(section) {
 	} else if(section === 'humans') {
 		nazwa.innerHTML = 'Ludzie Pustkowi';
 		opis.innerHTML = 'Ludzie Pustkowi jedzą piasek i noszą gazety jako zbroję.';
+	} else if (section === 'dwarves') {
+		nazwa.innerHTML = 'Miasta Kuźnie';
+		opis.innerHTML = 'Krasnoludy są fajne ponieważ powody.';
+	} else if (section === 'constructs') {
+		nazwa.innerHTML = 'Konstrukty';
+		opis.innerHTML = 'Idzie taka kupa złomu i myśli, że jest fajna. Ale nie jest.';
+	} else if (section === 'delaria') {
+		nazwa.innerHTML = 'Delaria';
+		opis.innerHTML = 'DEUS VULT';
 	}
 }
 
@@ -28,32 +37,32 @@ var resetInfo = function() {
 }
 
 // Old
-p3.onmouseover = function() {
-	nazwa.innerHTML = 'Miasta Kuźnie';
-	opis.innerHTML = 'Krasnoludy są fajne ponieważ powody.';
-}
+// p3.onmouseover = function() {
+// 	nazwa.innerHTML = 'Miasta Kuźnie';
+//	opis.innerHTML = 'Krasnoludy są fajne ponieważ powody.';
+// }
 
-p3.onmouseout = function() {
-	nazwa.innerHTML = '';
-	opis.innerHTML = '';
-}
+// p3.onmouseout = function() {
+//	nazwa.innerHTML = '';
+//	opis.innerHTML = '';
+// }
 
-p4.onmouseover = function() {
-	nazwa.innerHTML = 'Konstrukty';
-	opis.innerHTML = 'Idzie taka kupa złomu i myśli, że jest fajna. Ale nie jest.';
-}
+// p4.onmouseover = function() {
+//	nazwa.innerHTML = 'Konstrukty';
+//	opis.innerHTML = 'Idzie taka kupa złomu i myśli, że jest fajna. Ale nie jest.';
+// }
 
-p4.onmouseout = function() {
-	nazwa.innerHTML = '';
-	opis.innerHTML = '';
-}
+// p4.onmouseout = function() {
+//	nazwa.innerHTML = '';
+//	opis.innerHTML = '';
+// }
 
-p5.onmouseover = function() {
-	nazwa.innerHTML = 'Delaria';
-	opis.innerHTML = 'DEUS VULT';
-}
+// p5.onmouseover = function() {
+//	nazwa.innerHTML = 'Delaria';
+//	opis.innerHTML = 'DEUS VULT';
+// }
 
-p5.onmouseout = function() {
-	nazwa.innerHTML = '';
-	opis.innerHTML = '';
-}
+// p5.onmouseout = function() {
+//	nazwa.innerHTML = '';
+//	opis.innerHTML = '';
+// }
