@@ -1,0 +1,8 @@
+-
+1) kazda jednostka posiada maksymalna ilosc punktow ktore moze wydac na skille i ekwipunek, oraz masksymalna ilosc skilli ktore moze dokupic
+2) kazda frakcja ma skille frakcyjne, ktore czasem moga dawac skille jednostkom, przyklad: krasnoludy maja skill 'powolny', ktory blokuje kupno skilla 'szybkosc'
+3) niektore jednostki posiadaja na start wykupione skille/ekwipunek
+problem a: trzeba je dodawac na liste tak, zeby np w przypadku 2 blokowaly kupno niektorych skilli, ale jednoczesnie nie moga sie wliczac do kosztu, limitu skilli i nie mozna ich usunac
+problem b: krasnoludy posiadaja jednostke ludzi, ktorzy nie posiadaja skilla 'powolny' wiec nie mozna kazdej jednostce od krasnoludow przypisac tego skilla
+problem c: skille ktore jednostki posiadaja na start nie moga byc zwyklym tekstem (dzieki czemu nie wliczaloby sie np do kosztu czy limitu) bo niektore umozliwiaja kupno specyficznego sprzetu (jak np skill 'specjalista' umozliwia kupienie broni z traitem 'specjalna' jak np miotacz ognia) 
+-

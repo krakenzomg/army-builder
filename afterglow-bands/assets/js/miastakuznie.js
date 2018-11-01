@@ -1,5 +1,42 @@
-// INFO: class UX pattern
-// Zamiast pracowac na low-level properties takich jak 'style.display' mozemy dac elementom klasy ktore decyduja o ich wygladzie.
+var generateTable = function(id, object) {
+    var el = document.getElementById(id);
+    // var object = window.dwarfEngTable;
+
+    // for (var key in object) {
+    //     console.log('nazwa klucza', key);
+    //     console.log('wartosc klucza', object[key]);
+
+    //     object[key].forEach(element => {
+    //         console.log('wartosc kazdego elementu:', element);
+    //     });
+    // }
+
+    for (var key in object) {
+        var tr = document.createElement("tr");
+        el.appendChild(tr);
+
+        object[key].forEach(element => {
+            var td = document.createElement("td");
+            tr.appendChild(td);
+
+            var text = document.createTextNode(element);
+            td.appendChild(text);
+        });
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    generateTable('heroDwarfEng', window.heroDwarfEngTable);
+    generateTable('heroDwarfGuildMaster', window.heroDwarfGuildMasterTable);
+    generateTable('heroDwarfZarzadca', window.heroDwarfZarzadcaTable);
+    generateTable('specialDwarfDewastator', window.specialDwarfDewastatorTable);
+    generateTable('specialDwarfStraznikKuzni', window.specialDwarfStraznikKuzniTable);
+    generateTable('specialDwarfStraznikPrawa', window.specialDwarfStraznikPrawaTable);
+    generateTable('coreDwarfKrasnolud', window.coreDwarfKrasnoludTable);
+    generateTable('coreDwarfTarczownik', window.coreDwarfTarczownikTable);
+    generateTable('coreDwarfZoldak', window.coreDwarfZoldakTable);
+
+  });
 
 // New - simple
 var bohater = document.getElementById('bohater');
@@ -32,30 +69,4 @@ var addBasic = function() {
 // 	allSections.forEach(function(section) {
 // 		document.getElementById(section).classList.remove('is-visible');
 // 	})
-// }
-
-// Old
-// var dodajbohatera = document.getElementById('dodajbohatera'),
-// 	bohaterwybor = document.getElementById('bohater'),
-// 	dodajspecjalna = document.getElementById('dodajspecjalna'),
-// 	specjalnawybor = document.getElementById('specjalna'),
-// 	dodajpodstawowa = document.getElementById('dodajpodstawowa'),
-// 	podstawowawybor = document.getElementById('podstawowa');
-
-// dodajbohatera.onclick = function() {
-// 	specjalnawybor.style.display = 'none';
-// 	podstawowawybor.style.display = 'none';
-// 	bohaterwybor.style.display = 'inline-block';
-// }
-
-// dodajspecjalna.onclick = function() {
-// 	bohaterwybor.style.display = 'none';
-// 	podstawowawybor.style.display = 'none';
-// 	specjalnawybor.style.display = 'inline-block';
-// }
-
-// dodajpodstawowa.onclick = function() {
-// 	specjalnawybor.style.display = 'none';
-// 	bohaterwybor.style.display = 'none';
-// 	podstawowawybor.style.display = 'inline-block';
 // }
