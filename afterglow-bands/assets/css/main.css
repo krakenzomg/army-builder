@@ -1,87 +1,90 @@
-header, main, footer {
-  display: block;
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-ms-viewport {
+  width: device-width;
 }
 
 body {
-	background-image: url("../img/tlo50.jpg"), url("../img/znak.jpg");
-	background-repeat: no-repeat, repeat;
-	background-color: black;
-	background-size: 100%, 120px;
+	margin: 0;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
 }
 
-.logotlo {
-	background-image: url("../img/paseklogo.png");
-	background-repeat: repeat;
-	height: 150px;
-	max-height: 150px;
-	margin: -8px;
+.header, .main{
+  display: flex;
 }
 
-#logo {
-	text-align: center;
-	max-height: 120px;
+.header {
+	align-items: center;
+	justify-content: center;
+	background: #000;
 }
 
-#napis {
-	font-family: 'Black Ops One';
-	font-family: arial, verdana, 'Times New Roman', sans-sherif;
-	font: 48px 'Black Ops One';
-	text-shadow: 1px 1px 10px white;
-	text-align: center;
-	margin: auto;
-	padding-top: 2%;
+.main {
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	flex: 1;
+	background-image: url("../img/tlo50.jpg");
+	background-size: cover;
 }
 
 .frakcje {
-	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 5%;
-	width: 50%;
-	min-width: 720px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .wrapper {
-  float: left;
-  width: 20%;
+	height: 180px;
+	width: 180px;
+	position: relative;
 }
 
-.wrapper img{
-  width: 100%;
+.wrapper a {
+	display: block;
+	height: 100%;
 }
 
-.wrapper .top {
-  display: block;
+.wrapper a img {
+	position: absolute;
+	width: 100%;
 }
 
-.wrapper:hover .top {
-  display: none;
-}
-
-.wrapper .bottom {
-  display: none;
-}
-
-.wrapper:hover .bottom {
-  display: block;
+.wrapper a:hover .hovered {
+ z-index: 1;
 }
 
 .opisy {
-	margin: auto;
-	width: 50%;
-	min-width: 500px;
+	height: 60px;
+}
+
+#napis, #nazwa, #opis {
 	font-family: 'Black Ops One';
-	font-family: arial, verdana, 'Times New Roman', sans-sherif;
-	font: 24px 'Black Ops One';
 	text-shadow: 1px 1px 10px white;
 }
 
-#nic {
-	visibility: hidden;
+#napis {
+	font-size: 40px;
 }
 
-
-#nazwa {
+#nazwa, #opis {
+	margin: 10px;
+	font-size: 20px;
 	text-align: center;
-	font: 28px 'Black Ops One';
 }
