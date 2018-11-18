@@ -11,144 +11,158 @@
 
 <body>
 	<header>
-			<div class="logo">
-				<a href="../index.html"><img src="../assets/img/logomale.jpg" id="logo"></a>
-			</div>
-			<div class="fraction-name">
-				<p>Miasta Kuźnie<p>
-			</div>
+		<div class="logo">
+			<a href="../index.html"><img src="../assets/img/logomale.jpg" id="logo"></a>
+		</div>
+		<div class="fraction-name">
+			Miasta Kuźnie
+		</div>
 	</header>
 	<div class="main">
-		<div class="unitswrapper">
+		<div class="units-wrapper">
 			<div class="limits"></div>
 			<div class="units">
 				<div class="adding">
-					<div class="addplace"></div>
-					<div class="addhero" onclick="addHero()">
+					<div class="button-add" onclick="addHero()">
 						<!-- <div class="dodajbohatera" onclick="toogleSection('bohater')"> -->
-						<p class="text" id="napisbohater">Dodaj bohatera </p>
+						Dodaj bohatera
 					</div>
-					<div class="addspecial" onclick="addSpecial()">
+					<div class="button-add" onclick="addSpecial()">
 						<!-- <div class="dodajspecjalna" onclick="toogleSection('specjalna')"> -->
-						<p class="text">Dodaj jednostkę specjalną</p>
+						Dodaj jednostkę specjalną
 					</div>
-					<div class="addbasic" onclick="addBasic()">
+					<div class="button-add" onclick="addBasic()">
 						<!-- <div class="dodajpodstawowa" onclick="toogleSection('podstawowa')"> -->
-						<p class="text" id="napispodstawowa">Dodaj jednostkę podstawową</p>
+						Dodaj jednostkę podstawową
 					</div>
 
 				</div>
 				<div class="selecting">
-					<div class="hero" id="bohater">
-						<div class="hero1">
-							<p class="name">Inżynier</p>
-							<p class="cost">Koszt: 117</p>
-							<p class="stats">
-								<table id="heroDwarfEng" class="table">
-								</table>
-							</p>
-							<p class="leadership-skill">Zdolność Przywódcy: Ulepszony sprzęt</p>
-							<p class="equipment-limit">Limit ekwipunku: 45 punktów</p>
-							<p class="starting-skills">Zdolności: Krasnoludzka inżynieria, Wynalazki</p>
-							<p class="add-to-list">DODAJ>></p>
+					<div class="heroes" id="bohater">
+						<div class="hero">
+							<div class="hero-header">
+								<div class="name">Inżynier</div>
+								<div class="cost">Koszt: 117 punktów</div>
+								<div class="equipment-limit">Limit ekwipunku: 45 punktów</div>
+							</div>
+							<div class="hero-main">
+								<div class="table">
+									<table id="heroDwarfEng"></table>
+								</div>
+								<div class="hero-skills">
+									<div class="leadership-skill">Zdolność Przywódcy: Ulepszony sprzęt</div>
+									<div class="starting-skills">Zdolności: Krasnoludzka inżynieria, Wynalazki</div>
+								</div>
+							</div>
+							<div class="add-to-list">DODAJ>></div>
 						</div>
-						<div class="hero2">
-							<p class="name">Mistrz Gildii</p>
-							<p class="cost">Koszt: 115 punktów</p>
-							<p class="stats">
-								<table id="heroDwarfGuildMaster" class="table">
-								</table>
-							</p>
-							<p class="leadership-skill">Zdolność Przywódcy: Klucz zbrojowni</p>
-							<p class="equipment-limit">Limit ekwipunku: 45 punktów</p>
-							<p class="starting-skills">Zdolności: Handel, Ekskluzywny towar, Ochrona</p>
-							<p class="add-to-list">DODAJ>></p>
+						<div class="hero">
+							<div class="hero-header">
+								<div class="name">Mistrz Gildii</div>
+								<div class="cost">Koszt: 115 punktów</div>
+								<div class="equipment-limit">Limit ekwipunku: 45 punktów</div>
+							</div>
+							<div class="hero-main">
+								<div class="table">
+									<table id="heroDwarfGuildMaster"></table>
+								</div>
+								<div class="hero-skills">
+									<div class="leadership-skill">Zdolność Przywódcy: Klucz zbrojowni</div>
+									<div class="starting-skills">Zdolności: Handel, Ekskluzywny towar, Ochrona</div>
+								</div>
+							</div>
+							<div class="add-to-list">DODAJ>></div>
 						</div>
-						<div class="hero3">
-							<p class="name">Zarządca Kuźni</p>
-							<p class="cost">Koszt: 115 punktów</p>
-							<p class="stats">
-								<table id="heroDwarfZarzadca" class="table">
-								</table>
-							</p>
-							<p class="leadership-skill">Zdolność Przywódcy: Żywa legenda</p>
-							<p class="equipment-limit">Limit ekwipunku: 45 punktów</p>
-							<p class="starting-skills">Zdolności: Charyzma, Twardziel, Kupię twoje życie</p>
-							<p class="add-to-list">DODAJ>></p>
+						<div class="hero">
+							<div class="hero-header">
+								<div class="name">Zarządca Kuźni</div>
+								<div class="cost">Koszt: 115 punktów</div>
+								<div class="equipment-limit">Limit ekwipunku: 45 punktów</div>
+							</div>
+							<div class="hero-main">
+								<div class="table">
+									<table id="heroDwarfZarzadca"></table>
+								</div>
+								<div class="hero-skills">
+									<div class="leadership-skill">Zdolność Przywódcy: Żywa legenda</div>
+									<div class="starting-skills">Zdolności: Charyzma, Twardziel, Kupię twoje życie</div>
+								</div>
+							</div>
+							<div class="add-to-list">DODAJ>></div>
 						</div>
 					</div>
-					<div class="special" id="specjalna">
-						<div class="special1">
-							<p class="name">Dewastator</p>
-							<p class="cost">Koszt: 75</p>
-							<p class="stats">
+					<div class="specials" id="specjalna">
+						<div class="special">
+							<div class="name">Dewastator</div>
+							<div class="cost">Koszt: 75</div>
+							<div class="stats">
 								<table id="specialDwarfDewastator" class="table">
 								</table>
-							</p>
-							<p class="equipment-limit">Limit ekwipunku: 30 punktów</p>
-							<p class="starting-skills">Zdolności: Specjalista, Pirotechnik, Saper</p>
-							<p class="add-to-list">DODAJ>></p>
+							</div>
+							<div class="equipment-limit">Limit ekwipunku: 30 punktów</div>
+							<div class="starting-skills">Zdolności: Specjalista, Pirotechnik, Saper</div>
+							<div class="add-to-list">DODAJ>></div>
 						</div>
-						<div class="special2">
-							<p class="name">Strażnik Kuźni</p>
-							<p class="cost">Koszt: 85 punktów</p>
+						<div class="special">
+							<div class="name">Strażnik Kuźni</div>
+							<div class="cost">Koszt: 85 punktów</div>
 
-							<p class="stats">
+							<div class="stats">
 								<table id="specialDwarfStraznikKuzni" class="table">
 								</table>
-							</p>
-							<p class="equipment-limit">Limit ekwipunku: 16 punktów</p>
-							<p class="starting-skills">Zdolności: Bijatyka, Przysięga</p>
-							<p class="add-to-list">DODAJ>></p>
+							</div>
+							<div class="equipment-limit">Limit ekwipunku: 16 punktów</div>
+							<div class="starting-skills">Zdolności: Bijatyka, Przysięga</div>
+							<div class="add-to-list">DODAJ>></div>
 						</div>
-						<div class="special3">
-							<p class="name">Strażnik Prawa</p>
-							<p class="cost">Koszt: 68 punktów</p>
-							<p class="stats">
+						<div class="special">
+							<div class="name">Strażnik Prawa</div>
+							<div class="cost">Koszt: 68 punktów</div>
+							<div class="stats">
 								<table id="specialDwarfStraznikPrawa" class="table">
 								</table>
-							</p>
-							<p class="equipment-limit">Limit ekwipunku: 25 punktów</p>
-							<p class="starting-skills">Zdolności: Oko za oko, Zastraszenie</p>
-							<p class="add-to-list">DODAJ>></p>
+							</div>
+							<div class="equipment-limit">Limit ekwipunku: 25 punktów</div>
+							<div class="starting-skills">Zdolności: Oko za oko, Zastraszenie</div>
+							<div class="add-to-list">DODAJ>></div>
 						</div>
 					</div>
-					<div class="basic" id="podstawowa">
-						<div class="basic1">
-							<p class="name">Krasnolud</p>
-							<p class="cost">Koszt: 26</p>
-							<p class="stats">
+					<div class="basics" id="podstawowa">
+						<div class="basic">
+							<div class="name">Krasnolud</div>
+							<div class="cost">Koszt: 26</div>
+							<div class="stats">
 								<table id="coreDwarfKrasnolud" class="table">
 								</table>
-							</p>
-							<p class="leadership-skill">Wielkość jednostki: 1-5 modeli</p>
-							<p class="equipment-limit">Limit ekwipunku: 15 punktów</p>
-							<p class="starting-skills">Zdolności: </p>
-							<p class="add-to-list">DODAJ>></p>
+							</div>
+							<div class="leadership-skill">Wielkość jednostki: 1-5 modeli</div>
+							<div class="equipment-limit">Limit ekwipunku: 15 punktów</div>
+							<div class="starting-skills">Zdolności: </div>
+							<div class="add-to-list">DODAJ>></div>
 						</div>
-						<div class="basic2">
-							<p class="name">Tarczownik</p>
-							<p class="cost">Koszt: 41 punktów</p>
-							<p class="stats">
+						<div class="basic">
+							<div class="name">Tarczownik</div>
+							<div class="cost">Koszt: 41 punktów</div>
+							<div class="stats">
 								<table id="coreDwarfTarczownik" class="table">
 								</table>
-							</p>
-							<p class="leadership-skill">Wielkość jednostki: 1-5 modeli</p>
-							<p class="equipment-limit">Limit ekwipunku: 12 punktów</p>
-							<p class="starting-skills">Zdolności: Ściana tarcz</p>
-							<p class="add-to-list">DODAJ>></p>
+							</div>
+							<div class="leadership-skill">Wielkość jednostki: 1-5 modeli</div>
+							<div class="equipment-limit">Limit ekwipunku: 12 punktów</div>
+							<div class="starting-skills">Zdolności: Ściana tarcz</div>
+							<div class="add-to-list">DODAJ>></div>
 						</div>
-						<div class="basic3">
-							<p class="name">Żołdak</p>
-							<p class="cost">Koszt: 26 punktów</p>
-							<p class="stats">
+						<div class="basic">
+							<div class="name">Żołdak</div>
+							<div class="cost">Koszt: 26 punktów</div>
+							<div class="stats">
 								<table id="coreDwarfZoldak" class="table">
 								</table>
-							</p>
-							<p class="leadership-skill">Wielkość jednostki: 1-5 modeli</p>
-							<p class="equipment-limit">Limit ekwipunku: 10 punktów</p>
-							<p class="starting-skills">Zdolności: Człeczyna</p>
-							<p class="add-to-list">DODAJ>></p>
+							</div>
+							<div class="leadership-skill">Wielkość jednostki: 1-5 modeli</div>
+							<div class="equipment-limit">Limit ekwipunku: 10 punktów</div>
+							<div class="starting-skills">Zdolności: Człeczyna</div>
+							<div class="add-to-list">DODAJ>></div>
 						</div>
 					</div>
 				</div>
