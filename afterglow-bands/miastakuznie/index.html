@@ -1,556 +1,165 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="../assets/css/main.css">
-		<link rel="stylesheet" href="../assets/css/miastakuznie.css">
-		<link rel="stylesheet" href="../assets/css/helpers.css">
-		<link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/miastakuznie.css">
+	<link rel="stylesheet" href="../assets/css/helpers.css">
+	<link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+</head>
 
-	<body>
-		<header>
-				<div class="pasek">
-					<div class="logo">
-						<a href="../index.html"><img src="../assets/img/logomale.jpg" id="logo"></a>
+<body>
+	<header>
+			<div class="logo">
+				<a href="../index.html"><img src="../assets/img/logomale.jpg" id="logo"></a>
+			</div>
+			<div class="fraction-name">
+				<p>Miasta Kuźnie<p>
+			</div>
+	</header>
+	<div class="main">
+		<div class="unitswrapper">
+			<div class="limits"></div>
+			<div class="units">
+				<div class="adding">
+					<div class="addplace"></div>
+					<div class="addhero" onclick="addHero()">
+						<!-- <div class="dodajbohatera" onclick="toogleSection('bohater')"> -->
+						<p class="text" id="napisbohater">Dodaj bohatera </p>
 					</div>
-					<div class="nazwafrakcji">
-						<p>Miasta Kuźnie<p>
+					<div class="addspecial" onclick="addSpecial()">
+						<!-- <div class="dodajspecjalna" onclick="toogleSection('specjalna')"> -->
+						<p class="text">Dodaj jednostkę specjalną</p>
 					</div>
-				</div>
-		</header>
-		<div class="glowne">
-			<main>
-				<div class="limity">
-				</div>
-				<div class="dodawanie">
-					<div class="dodajmiejsce">
-					</div>
-
-					<div class="dodajbohatera" onclick="addHero()">
-					<!-- <div class="dodajbohatera" onclick="toogleSection('bohater')"> -->
-						<br>
-						<p class="napisdodaj" id="napisbohater">Dodaj bohatera </p>
-					</div>
-					<div class="dodajspecjalna" onclick="addSpecial()">
-					<!-- <div class="dodajspecjalna" onclick="toogleSection('specjalna')"> -->
-						<br>
-						<p class="napisdodaj">Dodaj jednostkę specjalną</p>
-					</div>
-					<div class="dodajpodstawowa" onclick="addBasic()">
-					<!-- <div class="dodajpodstawowa" onclick="toogleSection('podstawowa')"> -->
-						<br>
-						<p class="napisdodaj" id="napispodstawowa">Dodaj jednostkę podstawową</p>
+					<div class="addbasic" onclick="addBasic()">
+						<!-- <div class="dodajpodstawowa" onclick="toogleSection('podstawowa')"> -->
+						<p class="text" id="napispodstawowa">Dodaj jednostkę podstawową</p>
 					</div>
 
 				</div>
-				<div class="wybieranie">
-					<div class="bohater" id="bohater">
-						<div class="bohater1">
-							<p class="nazwa">Inżynier</p>
-							<p class="koszt">Koszt: 117</p>
-							<br><br><br>
-							<p class="statystki">
-								<table id = "heroDwarfEng" class="tabelka">							
+				<div class="selecting">
+					<div class="hero" id="bohater">
+						<div class="hero1">
+							<p class="name">Inżynier</p>
+							<p class="cost">Koszt: 117</p>
+							<p class="stats">
+								<table id="heroDwarfEng" class="table">
 								</table>
 							</p>
-							<p class="ldskill">Zdolność Przywódcy: Ulepszony sprzęt</p>
-							<br><br><br>
-							<p class="limiteq">Limit ekwipunku: 45 punktów</p>
-							<p class="posiadaneskille">Zdolności: Krasnoludzka inżynieria, Wynalazki</p>
-							<p class="dodajdolisty">DODAJ>></p>
+							<p class="leadership-skill">Zdolność Przywódcy: Ulepszony sprzęt</p>
+							<p class="equipment-limit">Limit ekwipunku: 45 punktów</p>
+							<p class="starting-skills">Zdolności: Krasnoludzka inżynieria, Wynalazki</p>
+							<p class="add-to-list">DODAJ>></p>
 						</div>
-						<div class="bohater2">
-							<p class="nazwa">Mistrz Gildii</p>
-							<p class="koszt">Koszt: 115 punktów</p>
-							<br><br><br>
-							<p class="statystki">
-								<table id = "heroDwarfGuildMaster" class="tabelka">									
+						<div class="hero2">
+							<p class="name">Mistrz Gildii</p>
+							<p class="cost">Koszt: 115 punktów</p>
+							<p class="stats">
+								<table id="heroDwarfGuildMaster" class="table">
 								</table>
 							</p>
-							<p class="ldskill">Zdolność Przywódcy: Klucz zbrojowni</p>
-							<br><br><br>
-							<p class="limiteq">Limit ekwipunku: 45 punktów</p>
-							<p class="posiadaneskille">Zdolności: Handel, Ekskluzywny towar, Ochrona</p>
-							<p class="dodajdolisty">DODAJ>></p>
+							<p class="leadership-skill">Zdolność Przywódcy: Klucz zbrojowni</p>
+							<p class="equipment-limit">Limit ekwipunku: 45 punktów</p>
+							<p class="starting-skills">Zdolności: Handel, Ekskluzywny towar, Ochrona</p>
+							<p class="add-to-list">DODAJ>></p>
 						</div>
-						<div class="bohater3">
-							<p class="nazwa">Zarządca Kuźni</p>
-							<p class="koszt">Koszt: 115 punktów</p>
-							<br><br><br>
-							<p class="statystki">
-								<table id = "heroDwarfZarzadca" class="tabelka">							
+						<div class="hero3">
+							<p class="name">Zarządca Kuźni</p>
+							<p class="cost">Koszt: 115 punktów</p>
+							<p class="stats">
+								<table id="heroDwarfZarzadca" class="table">
 								</table>
 							</p>
-							<p class="ldskill">Zdolność Przywódcy: Żywa legenda</p>
-							<br><br><br>
-							<p class="limiteq">Limit ekwipunku: 45 punktów</p>
-							<p class="posiadaneskille">Zdolności: Charyzma, Twardziel, Kupię twoje życie</p>
-							<p class="dodajdolisty">DODAJ>></p>
+							<p class="leadership-skill">Zdolność Przywódcy: Żywa legenda</p>
+							<p class="equipment-limit">Limit ekwipunku: 45 punktów</p>
+							<p class="starting-skills">Zdolności: Charyzma, Twardziel, Kupię twoje życie</p>
+							<p class="add-to-list">DODAJ>></p>
 						</div>
-						<div class="clear"></div>
 					</div>
-					<div class="specjalna" id="specjalna">
-						<div class="specjalna1">
-							<p class="nazwa">Dewastator</p>
-							<p class="koszt">Koszt: 75</p>
-							<br><br><br>
-							<p class="statystki">
-								<table id = "specialDwarfDewastator" class="tabelka">
+					<div class="special" id="specjalna">
+						<div class="special1">
+							<p class="name">Dewastator</p>
+							<p class="cost">Koszt: 75</p>
+							<p class="stats">
+								<table id="specialDwarfDewastator" class="table">
 								</table>
 							</p>
-							<br><br><br>
-							<p class="limiteq">Limit ekwipunku: 30 punktów</p>
-							<p class="posiadaneskille">Zdolności: Specjalista, Pirotechnik, Saper</p>
-							<p class="dodajdolisty">DODAJ>></p>
+							<p class="equipment-limit">Limit ekwipunku: 30 punktów</p>
+							<p class="starting-skills">Zdolności: Specjalista, Pirotechnik, Saper</p>
+							<p class="add-to-list">DODAJ>></p>
 						</div>
-						<div class="specjalna2">
-							<p class="nazwa">Strażnik Kuźni</p>
-							<p class="koszt">Koszt: 85 punktów</p>
-							<br><br><br>
-							<p class="statystki">
-								<table id = "specialDwarfStraznikKuzni" class="tabelka">
-								</table>
-							</p>
-							<br><br><br>
-							<p class="limiteq">Limit ekwipunku: 16 punktów</p>
-							<p class="posiadaneskille">Zdolności: Bijatyka, Przysięga</p>
-							<p class="dodajdolisty">DODAJ>></p>
-						</div>
-						<div class="specjalna3">
-							<p class="nazwa">Strażnik Prawa</p>
-							<p class="koszt">Koszt: 68 punktów</p>
-							<br><br><br>
-							<p class="statystki">
-								<table id = "specialDwarfStraznikPrawa" class="tabelka">								
-								</table>
-							</p>
-							<br><br><br>
-							<p class="limiteq">Limit ekwipunku: 25 punktów</p>
-							<p class="posiadaneskille">Zdolności: Oko za oko, Zastraszenie</p>
-							<p class="dodajdolisty">DODAJ>></p>
-						</div>
-						<div class="clear"></div>
-					</div>
-					<div class="podstawowa" id="podstawowa">
-						<div class="podstawowa1">
-							<p class="nazwa">Krasnolud</p>
-							<p class="koszt">Koszt: 26</p>
-							<br><br><br>
-							<p class="statystki">
-								<table id = "coreDwarfKrasnolud"class="tabelka">
-								</table>
-							</p>
-							<p class="ldskill">Wielkość jednostki: 1-5 modeli</p>
-							<br><br><br>
-							<p class="limiteq">Limit ekwipunku: 15 punktów</p>
-							<p class="posiadaneskille">Zdolności: </p>
-							<p class="dodajdolisty">DODAJ>></p>
-						</div>
-						<div class="podstawowa2">
-							<p class="nazwa">Tarczownik</p>
-							<p class="koszt">Koszt: 41 punktów</p>
-							<br><br><br>
-							<p class="statystki">
-								<table id = "coreDwarfTarczownik" class="tabelka">								
-								</table>
-							</p>
-							<p class="ldskill">Wielkość jednostki: 1-5 modeli</p>
-							<br><br><br>
-							<p class="limiteq">Limit ekwipunku: 12 punktów</p>
-							<p class="posiadaneskille">Zdolności: Ściana tarcz</p>
-							<p class="dodajdolisty">DODAJ>></p>
-						</div>
-						<div class="podstawowa3">
-							<p class="nazwa">Żołdak</p>
-							<p class="koszt">Koszt: 26 punktów</p>
-							<br><br><br>
-							<p class="statystki">
-								<table id = "coreDwarfZoldak" class="tabelka">									
-								</table>
-							</p>
-							<p class="ldskill">Wielkość jednostki: 1-5 modeli</p>
-							<br><br><br>
-							<p class="limiteq">Limit ekwipunku: 10 punktów</p>
-							<p class="posiadaneskille">Zdolności: Człeczyna</p>
-							<p class="dodajdolisty">DODAJ>></p>
-						</div>
-						<div class="clear"></div>
-					</div>
-					<div class="clear">
-					</div>
-				</div>
-			<div class="lista">
-				<div class="pozycja1">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
+						<div class="special2">
+							<p class="name">Strażnik Kuźni</p>
+							<p class="cost">Koszt: 85 punktów</p>
 
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="pozycja2">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="pozycja3">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="pozycja4">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="pozycja5">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="pozycja6">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="pozycja7">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="pozycja8">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="pozycja9">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="pozycja10">
-					<table class="tabelkalista">
-						<thead>
-							<tr>
-								<td colspan="4"></td>
-								<td colspan="2"></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
+							<p class="stats">
+								<table id="specialDwarfStraznikKuzni" class="table">
+								</table>
+							</p>
+							<p class="equipment-limit">Limit ekwipunku: 16 punktów</p>
+							<p class="starting-skills">Zdolności: Bijatyka, Przysięga</p>
+							<p class="add-to-list">DODAJ>></p>
+						</div>
+						<div class="special3">
+							<p class="name">Strażnik Prawa</p>
+							<p class="cost">Koszt: 68 punktów</p>
+							<p class="stats">
+								<table id="specialDwarfStraznikPrawa" class="table">
+								</table>
+							</p>
+							<p class="equipment-limit">Limit ekwipunku: 25 punktów</p>
+							<p class="starting-skills">Zdolności: Oko za oko, Zastraszenie</p>
+							<p class="add-to-list">DODAJ>></p>
+						</div>
+					</div>
+					<div class="basic" id="podstawowa">
+						<div class="basic1">
+							<p class="name">Krasnolud</p>
+							<p class="cost">Koszt: 26</p>
+							<p class="stats">
+								<table id="coreDwarfKrasnolud" class="table">
+								</table>
+							</p>
+							<p class="leadership-skill">Wielkość jednostki: 1-5 modeli</p>
+							<p class="equipment-limit">Limit ekwipunku: 15 punktów</p>
+							<p class="starting-skills">Zdolności: </p>
+							<p class="add-to-list">DODAJ>></p>
+						</div>
+						<div class="basic2">
+							<p class="name">Tarczownik</p>
+							<p class="cost">Koszt: 41 punktów</p>
+							<p class="stats">
+								<table id="coreDwarfTarczownik" class="table">
+								</table>
+							</p>
+							<p class="leadership-skill">Wielkość jednostki: 1-5 modeli</p>
+							<p class="equipment-limit">Limit ekwipunku: 12 punktów</p>
+							<p class="starting-skills">Zdolności: Ściana tarcz</p>
+							<p class="add-to-list">DODAJ>></p>
+						</div>
+						<div class="basic3">
+							<p class="name">Żołdak</p>
+							<p class="cost">Koszt: 26 punktów</p>
+							<p class="stats">
+								<table id="coreDwarfZoldak" class="table">
+								</table>
+							</p>
+							<p class="leadership-skill">Wielkość jednostki: 1-5 modeli</p>
+							<p class="equipment-limit">Limit ekwipunku: 10 punktów</p>
+							<p class="starting-skills">Zdolności: Człeczyna</p>
+							<p class="add-to-list">DODAJ>></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-			</main>
-			<footer>
-			</footer>
+		<div class="list">
 		</div>
+	</div>
 
-		<script type="text/javascript" charset="UTF-8" src="../assets/js/constants.js"></script>
-		<script type="text/javascript" charset="UTF-8" src="../assets/js/miastakuznie.js"></script>
-	</body>
+	<script type="text/javascript" charset="UTF-8" src="../assets/js/constants.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="../assets/js/miastakuznie.js"></script>
+</body>
+
 </html>
