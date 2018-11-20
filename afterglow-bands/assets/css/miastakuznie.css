@@ -103,17 +103,17 @@ header .fraction-name {
 	display: none;
 }
 
-.hero {
+.hero, .special, .basic {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 }
 
-.hero:nth-child(odd) {
+.hero:nth-child(odd), .special:nth-child(odd), .basic:nth-child(odd) {
 	background: rgba(0, 0, 0, 0.2);
   }
 
-.hero .hero-header {
+.hero .hero-header, .special .special-header, .basic .basic-header {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -124,20 +124,20 @@ header .fraction-name {
 	text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
 }
 
-.hero .hero-header .name {
+.hero .hero-header .name, .special .special-header .name, .basic .basic-header .name {
 	flex: 3
 }
 
-.hero .hero-header .cost {
+.hero .hero-header .cost, .special .special-header .cost, .basic .basic-header .cost {
 	flex: 2
 }
 
-.hero .hero-header .equipment-limit {
+.hero .hero-header .equipment-limit, .special .special-header .equipment-limit, .basic .basic-header .equipment-limit {
 	flex: 3;
 	text-align: right;
 }
 
-.hero .hero-main {
+.hero .hero-main, .special .special-main, .basic .basic-main {
 	padding: 10px 15px;
 	width: 100%;
 	display: flex;
@@ -145,16 +145,17 @@ header .fraction-name {
 	justify-content: space-between;
 }
 
-.hero .hero-main .table {
+.hero .hero-main .table, .special .special-main .table,.basic .basic-main .table {
 	flex: 3;
 	display: block;
 }
 
-.hero .hero-main .hero-skills {
+.hero .hero-main .hero-skills, .special .special-main .special-skills, .basic .basic-main .basic-skills {
 	flex: 5;
+	text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
 }
 
-.hero .add-to-list {
+.hero .add-to-list, .special .add-to-list, .basic .add-to-list {
 	padding: 0px 15px 0px 15px;
 	cursor: pointer;
 	color: rgb(126, 0, 0);
@@ -162,11 +163,11 @@ header .fraction-name {
 	font-weight: 900;
 }
 
-.hero .hero-main .table table {
+.hero .hero-main .table table, .special .special-main .table table, .basic .basic-main .table table {
 	border-collapse: collapse;
   }
   
-  .hero .hero-main .table table td, th {
+  .hero .hero-main .table table td, th, .special .special-main .table table td, th, .basic .basic-main .table table td, th {
 	border: 3px solid #484848;
 	padding: 5px;
 	text-align: center;
@@ -176,12 +177,9 @@ header .fraction-name {
 	font-weight: 900;
   }
 
-.hero .hero-main .hero-skills {
-	text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
-}
 
-  .hero .hero-main .table table th {
-	  background: #000000;
+  .hero .hero-main .table table tr:first-of-type, .special .special-main .table table tr:first-of-type, .basic .basic-main .table table tr:first-of-type {
+	  background: rgba(0, 0, 0, 0.4)
   }
 
 
